@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Cyber;
+    src: url(https://assets.codepen.io/605876/Blender-Pro-Bold.otf);
+    font-display: swap;
+  }
+  
+  .loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, hsl(58, 100%, 48%) 60%, hsl(58, 100%, 45%) 60%), hsl(58, 100%, 50%);
+  }
+  
+  .loader-text {
+    font-family: 'Cyber', sans-serif;
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    text-transform: uppercase;
+    overflow: hidden;
+    box-shadow: -2px 0 1px 0px inset hsl(0, 90%, 50%);
+    transition: width 1s ease, height 1s ease;
+  }
+  
+  .glitch {
+    position: relative;
+    animation: shimmy-text 2s infinite alternate ease-in-out;
+  }
+  
+  .loader-text span {
+    display: block;
+    position: relative;
+    z-index: 2;
+    color: hsl(0, 0%, 100%);
+    white-space: nowrap;
+  }
+  
+  .loader-text span:after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: hsl(0, 0%, 100%);
+    filter: brightness(1);
+    animation: shimmy-text 2s infinite alternate ease-in-out;
+    text-shadow: 2px 2px hsl(180, 90%, 50%), -2px -2px hsl(60, 90%, 60%);
+  }
+  
+  @keyframes shimmy-text {
+    0% {
+      clip-path: inset(2% 0 95% 0);
+    }
+  
+    2%, 8% {
+      clip-path: inset(78% 0 0 0);
+      transform: translate(calc(var(--shimmy-distance, 5px) * -1%), 0);
+    }
+  
+    6% {
+      clip-path: inset(78% 0 0 0);
+      transform: translate(calc(var(--shimmy-distance, 5px) * 1%), 0);
+    }
+  
+    10% {
+      clip-path: inset(44% 0 46% 0);
+      transform: translate(calc(var(--shimmy-distance, 5px) * 1%), 0);
+    }
+  
+    14%, 21% {
+      clip-path: inset(0 0 100% 0);
+      transform: translate(calc(var(--shimmy-distance, 5px) * 1%), 0);
+    }
+  
+    25%, 30% {
+      clip-path: inset(40% 0 15% 0);
+      transform: translate(calc(var(--shimmy-distance, 5px) * -1%), 0);
+    }
+  
+    35%, 45% {
+      clip-path: inset(63% 0 20% 0);
+      transform: translate(calc(var(--shimmy-distance, 5px) * -1%), 0);
+    }
+  
+    50% {
+      clip-path: inset(63% 0 20% 0);
+      transform: translate(0, 0);
+    }
+  
+    55%, 60% {
+      clip-path: inset(0 0 90% 0);
+    }
+  
+    100% {
+      clip-path: inset(0 0 100% 0);
+    }
+  }
+  
