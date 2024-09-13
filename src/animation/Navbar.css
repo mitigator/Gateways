@@ -1,0 +1,42 @@
+@keyframes neon-border {
+    0% {
+      border-color: neon-pink;
+    }
+    50% {
+      border-color: electric-blue;
+    }
+    100% {
+      border-color: neon-pink;
+    }
+  }
+  
+  .neon-border {
+    border: 2px solid;
+    border-color: neon-pink;
+    animation: neon-border 3s infinite alternate;
+    padding: 8px; /* Optional: Adjust padding as needed */
+    border-radius: 8px; /* Optional: Add border radius if needed */
+  }
+  
+  /* Define your neon-pink and electric-blue colors */
+  :root {
+    --neon-pink: #ff6ec7;
+    --electric-blue: #7df9ff;
+  }
+  
+  .neon-border {
+    border-color: var(--neon-pink);
+  }
+  
+  @keyframes neon-border {
+    0% {
+      border-color: var(--neon-pink);
+    }
+    50% {
+      border-color: var(--electric-blue);
+    }
+    100% {
+      border-color: var(--neon-pink);
+    }
+  }
+  
