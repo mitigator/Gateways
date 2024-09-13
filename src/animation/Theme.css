@@ -1,0 +1,72 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide-in from left */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide-in from right */
+@keyframes slideRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Fade effect for images */
+@keyframes imageFade {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 2s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 2s ease-out forwards;
+}
+
+.animate-image-fade {
+  animation: imageFade 5s infinite ease-in-out;
+}
+
+/* Background and text colors */
+.bg-dark-blue {
+  background-color: #4E4B80;
+}
+
+.text-light-lavender {
+  color: #C9BBD2;
+}
+
+.text-teal {
+  color: #3DA1C1;
+}

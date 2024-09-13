@@ -6,6 +6,8 @@ module.exports = {
     colors:{
       'navbar-background':'#0E0A19',
       'navbar-text' : '#FC9F01',
+      'herosection-background' : '#0E0A19',
+      'herosection-text' : '#FC9F01'
 
       
     }

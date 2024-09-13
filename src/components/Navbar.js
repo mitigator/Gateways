@@ -3,7 +3,7 @@ import '../animation/Navbar.css';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center  text-navbar-text">
+    <div className="flex justify-between items-center bg-herosection-background  text-navbar-text">
       {/* Left section: Logo, About, Event */}
       <div className="flex space-x-6 bg-navbar-background neon-border">
         <div className="font-bold">Logo</div>
