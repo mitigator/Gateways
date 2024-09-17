@@ -1,18 +1,19 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import { HeroSection } from '../components/HeroSection'
-import {Theme} from '../components/Theme'
-import { Cards } from '../components/Card'
+import Hero from '../components/Hero'
+import Theme from '../components/Theme'
+import Technical from '../components/Technical'
+import NonTechnical from '../components/NonTechnical'
+import Sponsor from '../components/Sponsor'
 
 const Home = () => {
   return (
     <div>
-        <Navbar/>
-        <HeroSection/>
+        <Hero/>
         <Theme/>
-        
+        <Technical/>
+        <NonTechnical/>
+        <Sponsor/>
     </div>
-    
   )
 }
 

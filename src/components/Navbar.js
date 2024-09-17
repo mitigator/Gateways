@@ -1,22 +1,20 @@
 import React from 'react';
-import '../animation/Navbar.css'; 
+import '../animation/Navbar.css';
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between items-center bg-herosection-background  text-navbar-text">
-      {/* Left section: Logo, About, Event */}
-      <div className="flex space-x-6 bg-navbar-background neon-border">
-        <div className="font-bold">Logo</div>
-        <a href="#about" className="hover:text-gray-400">About</a>
-        <a href="#event" className="hover:text-gray-400">Event</a>
+    <nav className="nav-section">
+      <div className="container mx-auto flex justify-between items-center p-4">
+        <div className="text-white text-2xl font-bold">Event Name</div>
+        <ul className="flex space-x-8 text-white">
+          <li className="hover:text-blue-400 cursor-pointer">Home</li>
+          <li className="hover:text-blue-400 cursor-pointer">Theme</li>
+          <li className="hover:text-blue-400 cursor-pointer">Technical</li>
+          <li className="hover:text-blue-400 cursor-pointer">Non-Technical</li>
+          <li className="hover:text-blue-400 cursor-pointer">Sponsors</li>
+        </ul>
       </div>
-
-      {/* Right section: Brochure, Register */}
-      <div className="flex space-x-6 bg-navbar-background neon-border">
-        <a href="#brochure" className="hover:text-gray-400">Brochure</a>
-        <a href="#register" className="bg-blue-500 px-4 rounded hover:bg-blue-600">Register Now</a>
-      </div>
-    </div>
+    </nav>
   );
 };
 

@@ -1,35 +1,38 @@
 import React from 'react';
+import '../animation/Theme.css';
+import ThemeImage from '../assets/ThemeImage.png'
 
-import '../animation/Theme.css'; 
-
-export const Theme = () => {
+const Theme = () => {
   return (
-    <div className="bg-dark-blue text-light-lavender py-16 px-8 space-y-20">
-      <h1 className="text-5xl font-bold text-center animate-fade-in">Event Theme</h1>
-
-      <div className="flex flex-col md:flex-row items-center justify-between space-y-6 md:space-y-0 md:space-x-12 animate-slide-left">
-        <div className="md:w-1/2">
-          <h2 className="text-3xl font-semibold text-teal">Cyberpunk</h2>
-          <p className="text-lg mt-4">
-            Cyberpunk is a subgenre of science fiction that focuses on dystopian futures dominated by high technology, artificial intelligence, and cybernetic enhancements. Set in neon-lit cities, it explores themes of rebellion against corporate control, blending the digital world with reality.
-          </p>
-        </div>
-        <div className="md:w-1/2">
-          <img src="{CyberpunkImage}" alt="Cyberpunk" className="w-full h-auto animate-image-fade" />
+    <section className="theme-section py-20">
+      <div className="container mx-auto text-center">
+        <h2 className="text-4xl font-bold text-herosection-white">Theme</h2>
+        <div className='flex flex-col justify-between'>
+          <div className='flex mb-10'>
+            <img 
+              src={ThemeImage} 
+              alt="Theme Description" 
+              className="mr-4 w-1/4 h-40 " 
+            />
+            <p className="text-center m-5 text-herosection-white align-middle">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+          <div className='flex mt-20'>
+          
+            <p className="text-center m-5 text-herosection-white align-middle">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <img 
+              src={ThemeImage} 
+              alt="Theme Description" 
+              className="mr-4 w-1/4 h-40" 
+            />
+          </div>
         </div>
       </div>
-
-      <div className="flex flex-col md:flex-row-reverse items-center justify-between space-y-6 md:space-y-0 md:space-x-12 animate-slide-right">
-        <div className="md:w-1/2">
-          <h2 className="text-3xl font-semibold text-teal">Greek Mythology</h2>
-          <p className="text-lg mt-4">
-            Greek mythology is a collection of stories about gods, heroes, and ancient rituals, emphasizing the struggles of mortals and immortals alike. It is filled with tales of power, betrayal, and valor, reflecting humanity’s eternal search for meaning in a chaotic world.
-          </p>
-        </div>
-        <div className="md:w-1/2">
-          <img src="{GreekGodImage}" alt="Greek God" className="w-full h-auto animate-image-fade" />
-        </div>
-      </div>
-    </div>
+    </section>
   );
 };
+
+export default Theme;
