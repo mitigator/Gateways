@@ -1,19 +1,22 @@
 import React from 'react';
 import '../animation/Technical.css';
-import Card from './Card'
-import Rectangle from '../assets/Rectangle.png'
+import Card from './Card';
 
 const Technical = () => {
   return (
-    <section className="technical-section py-20">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-herosection-white">Technical Events</h2>
-        <div className="flex justify-around items-center h-screen bg-gray-100 flex-wrap gap-4">
-      
+    <div className=' overflow-x-hidden  w-[100vw] h-[100vh]'>
+      <h2 className='text-center font-bold text-4xl m-5'>Technical</h2>
+    <div className='flex flex-wrap justify-evenly'>
+      <Card/>
+      <Card/>
+      <Card/>
     </div>
-        
-      </div>
-    </section>
+    <div className='flex flex-wrap justify-evenly'>
+      <Card/>
+      <Card/>
+      <Card/>
+    </div>
+    </div>
   );
 };
 

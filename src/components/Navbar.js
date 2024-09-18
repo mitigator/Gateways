@@ -1,21 +1,25 @@
 import React from 'react';
-import '../animation/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ children, className = '', borderColor = 'navbar-background', bgColor = 'bg-gray-100' }) => {
+  const clipPath = 'polygon(75% 0, 100% 34%, 54% 100%, 0 100%, 0 0)';
+
   return (
-    <nav className="nav-section">
-      <div className="container mx-auto flex justify-between items-center p-4">
-        <div className="text-white text-2xl font-bold">Event Name</div>
-        <ul className="flex space-x-8 text-white">
-          <li className="hover:text-blue-400 cursor-pointer">Home</li>
-          <li className="hover:text-blue-400 cursor-pointer">Theme</li>
-          <li className="hover:text-blue-400 cursor-pointer">Technical</li>
-          <li className="hover:text-blue-400 cursor-pointer">Non-Technical</li>
-          <li className="hover:text-blue-400 cursor-pointer">Sponsors</li>
-        </ul>
+    <div className={`relative w-64 h-64 ${className}`}>
+      <div 
+        className={`absolute inset-0 ${borderColor}`}
+        style={{
+          clipPath,
+          transform: 'scale(1.02)',
+        }}
+      />
+      <div 
+        className={`absolute inset-0 ${bgColor}`}
+        style={{ clipPath }}
+      >
+        {children}
       </div>
-    </nav>
+    </div>
   );
-};
+}
 
-export default Navbar;
+export default Navbar

@@ -1,11 +1,11 @@
 import React from 'react';
-import '../animation/Hero.css';
 
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <section className="hero-section">
-    </section>
+    <div className="w-full  h-screen ">
+      <p>Hello World</p>
+    </div>
   );
 };
 
-export default Hero;
+export default HeroSection;

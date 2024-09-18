@@ -4,13 +4,10 @@ module.exports = {
   theme: {
     extend: {},
     colors:{
-      'navbar-background':'#0E0A19',
-      'navbar-text' : '#FC9F01',
-      'herosection-background' : '#0E0A19',
-      'herosection-text' : '#F0183F',
-      'herosection-white' : '#FFFFFF',
-      'herosection-cyan' : '#00FFFF',
-      'sponsor-text' : '#C67171'
+      'gradient1':'#020105',
+      'gradient2' : '#10033b',
+      'gradient3':'#4a148c'
+      
 
       
     }

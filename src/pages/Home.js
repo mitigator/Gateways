@@ -4,15 +4,13 @@ import Theme from '../components/Theme'
 import Technical from '../components/Technical'
 import NonTechnical from '../components/NonTechnical'
 import Sponsor from '../components/Sponsor'
+import Navbar from '../components/Navbar'
 
 const Home = () => {
   return (
     <div>
-        <Hero/>
-        <Theme/>
         <Technical/>
-        <NonTechnical/>
-        <Sponsor/>
+        
     </div>
   )
 }
