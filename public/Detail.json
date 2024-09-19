@@ -1,0 +1,30 @@
+{
+    "events": [
+      {
+        "name": "Astral Aesthetics",
+        "description": "Prepare to embark on an awe-inspiring design odyssey that transcends the boundaries of the ordinary! Join us at Astral Aesthetics, where the captivating convergence of UI/UX design with the captivating mysteries of the cosmos beckons. Embrace the boundless potential of your creative spirit as you venture into the uncharted domains of HTML, CSS, and JavaScript. This is your chance to unleash the full breadth of your artistic prowess, illuminating the digital landscape like a dazzling constellation against the dark expanse. Are you poised and ready to etch your distinctive legacy into the ever-expanding universe of web design? Seize this cosmic opportunity and let your ingenuity shine brighter than the stars!",
+        "number_of_members": "Up to 2 members per team",
+        "prerequisites": [
+          "HTML",
+          "CSS",
+          "JAVASCRIPT"
+        ],
+        "rounds": [
+          "Round 1: Landing Page Design",
+          "Round 2: Website Replication"
+        ],
+        "instructions": [
+          "Rules will be provided during the event.",
+          "PCs with VS Code will be provided.",
+          "Internet will not be provided."
+        ],
+        "venue": "MCA Lab, Central Block",
+        "prize": {
+          "first": "3000",
+          "second": "2000",
+          "third": "1000"
+        }
+      }
+    ]
+  }
+  

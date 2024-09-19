@@ -1,15 +1,9 @@
-import React from 'react';
-import '../animation/Sponsor.css';
+import React from 'react'
 
 const Sponsor = () => {
   return (
-    <section className="sponsor-section py-20">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-sponsor-text">Sponsors</h2>
-       
-      </div>
-    </section>
-  );
-};
+    <div>Sponsor</div>
+  )
+}
 
-export default Sponsor;
+export default Sponsor

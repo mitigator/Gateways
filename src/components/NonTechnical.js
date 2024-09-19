@@ -1,15 +1,24 @@
 import React from 'react';
-import '../animation/NonTechnical.css';
+import '../animation/Technical.css'; // Ensure CSS is properly loaded
+import Card from './Card';
+import Gradient from './Gradient';
 
-const NonTechnical = () => {
+const NonTechnial = () => {
   return (
-    <section className="nontechnical-section py-20">
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold text-herosection-white">Non-Technical Events</h2>
-        
+    <div className='relative overflow-x-hidden w-[100vw]'>
+      <Gradient degree={310}/>
+      <h2 className='text-center font-bold text-4xl m-5 z-10 text-White'>Non Technical</h2>
+      <div className='flex flex-wrap justify-evenly'>
+        <Card/>
+        <Card/>
+        <Card/>
       </div>
-    </section>
+      <div className='flex flex-wrap justify-evenly'>
+        <Card/>
+        <Card/>
+      </div>
+    </div>
   );
 };
 
-export default NonTechnical;
+export default NonTechnial;
