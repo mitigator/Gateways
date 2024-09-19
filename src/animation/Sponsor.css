@@ -1,0 +1,9 @@
+.sponsor-section {
+    background-image: url('../assets/Sponsor.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: -40px;
+
+  }
+  
