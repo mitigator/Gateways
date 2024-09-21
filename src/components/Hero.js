@@ -3,6 +3,7 @@ import Gradient from './Gradient';
 import InnerCircle from '../assets/InnerCircle.png';
 import OuterCircle from '../assets/OuterCircle.png';
 
+
 const Hero = () => {
   const calculateTimeLeft = () => {
     const eventDate = new Date('2024-11-17T07:30:00'); // Replace with your event date
